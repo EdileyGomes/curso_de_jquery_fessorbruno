@@ -1,10 +1,13 @@
-$(document).on({ 
-    click: (event) => {$('#resultado').html(`${event.type}: ${event.which}`)},
-    keydown: (event) => {
-        $('#resultado').html(`${event.type}: ${event.which}`);
-        if (event.which == 13) {
-            alert('Foi pressionado o ENTER')
-        }
+$('div').click(() => {
+    alert('Evento disparado na Div!')
+})
 
-    } 
-});
+$('p').click((event) => {
+    event.stopPropagation();
+    alert('Evento disparado no p')
+})
+
+$('span').click((event) => {
+    event.stopPropagation();
+    alert('Evento disparado no Span')
+})
