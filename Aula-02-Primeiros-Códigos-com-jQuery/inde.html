@@ -24,7 +24,15 @@
         <button id="btn-somarjs">Somar JS</button>
         <button id="btn-somarjq">Somar JQ</button>
     </div>
-
     <script src="script/script.js"></script>
+    <script>
+        $('#btn-somarjq').click(function() {
+            let v1 = parseInt($('#v1').val())
+            let v2 = parseInt($('#v2').val())
+
+            let soma = v1 + v2
+            $('#res').val(soma)
+        })
+    </script>
 </body>
 </html>
