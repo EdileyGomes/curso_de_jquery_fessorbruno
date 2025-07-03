@@ -1,13 +1,21 @@
-$('div').click(() => {
-    alert('Evento disparado na Div!')
-})
+$('div').click(function (e) { 
+    e.preventDefault();
+    e.stopPropagation();
+    
+    $('#resultado').html(`Você clicou no <strong>"DIV"</strong>`);
+});
 
-$('p').click((event) => {
-    event.stopPropagation();
-    alert('Evento disparado no p')
-})
+$('p').click(function (e) { 
+    e.preventDefault();
+    e.stopPropagation();
+    
+    $('#resultado').html(`Você clicou no <strong>"SPAN"</strong>`);
+});;
 
-$('span').click((event) => {
-    event.stopPropagation();
-    alert('Evento disparado no Span')
-})
+$('span').click(function (e) { 
+    e.preventDefault();
+    e.stopPropagation();
+    
+    $('#resultado').html(`Você clicou no <strong>"P"</strong>`);
+});
+
