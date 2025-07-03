@@ -19,11 +19,11 @@ body {
 }
 
 h1 {
-    background-image: linear-gradient(22deg, rgb(9, 87, 151), rgb(6, 160, 221));
+    background-image: linear-gradient(22deg, rgb(24, 211, 124), rgb(2, 77, 107));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    -text-fill-color: transparent;
 }
 
 ul {
