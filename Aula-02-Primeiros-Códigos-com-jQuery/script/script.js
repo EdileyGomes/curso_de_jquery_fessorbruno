@@ -1,13 +1,11 @@
-let btn_somar = document.getElementById('btn-somarjs').addEventListener('click', function() {
-    let v1 = document.getElementById('v1').value
-    let v2 = document.getElementById('v2').value
+$('#btn-somarjq').click(function (e) { 
+    e.preventDefault();
+    
+    let v1 = Number($('#v1').val())
+    let v2 = Number($('#v2').val())
+    let res = Number($('#red').val())
 
-    soma = parseInt(v1) + parseInt(v2)
+    let soma = v1 + v2
 
-    let res = document.getElementById('res').value = soma
-
-    // jquery
-
-    jqu
-
-})
+    $('#res').val(soma);
+});
