@@ -1,5 +1,3 @@
-$(document).ready(()=>{
-    $('#nome').keyup(function (e) { 
-        $('#texto').html(`${nome.value}`)
-    });
+$('#nome').keyup(function (e) { 
+    $('#texto').html(`Você digitou: ` + $('#nome').val());
 });
