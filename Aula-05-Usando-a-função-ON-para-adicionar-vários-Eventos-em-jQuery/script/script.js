@@ -9,6 +9,6 @@ $('.bloco').on({
         $('#texto').text('Mouse saiu do Bloco');
     },
     mousemove: (e) => {
-        $('#texto').html(`Valor de Y:${e.pageY} <br /> Valor de X: ${e.pageX}`);
+        $('#texto').html(`Valor de Y:${e.pageY}<br /> Valor de X: ${e.pageX}`);
     }
 });
