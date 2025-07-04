@@ -1,18 +1,14 @@
-$(document).ready(()=>{
-    $('.bloco').on({
-        click: function(){
-            $('#texto').html('Mouse clicou')
-        },
-        mouseenter: function() {
-            $('#texto').html('Mouse entrou no quadrado!')
-        },
-        mouseleave: function() {
-            $('#texto').html('Mouse saiu do Quadrado')
-        },
-        dblclick: function() {
-            alert('Clicou duas vezes')
-        }
-    })
+$('.bloco').on({
+    click: () => {
+        $('#texto').text('Clique Normal');
+    },
+    mouseenter: () => {
+        $('#texto').text('Mouse Entrou no bloco');
+    },
+    mouseleave: () => {
+        $('#texto').text('Mouse saiu do Bloco');
+    },
+    mousemove: (e) => {
+        $('#texto').html(`Valor de Y:${e.pageY} <br /> Valor de X: ${e.pageX}`);
+    }
 });
-    
-
