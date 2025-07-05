@@ -1,21 +1,21 @@
-$('div').click(function (e) { 
-    e.preventDefault();
-    e.stopPropagation();
-    
-    $('#resultado').html(`Você clicou no <strong>"DIV"</strong>`);
-});
+$(document).ready(function () {
+    $('div').click(function (e) { 
+        e.preventDefault();
+        
 
-$('p').click(function (e) { 
-    e.preventDefault();
-    e.stopPropagation();
-    
-    $('#resultado').html(`Você clicou no <strong>"SPAN"</strong>`);
-});;
+        alert('Evento disparado no div')
+    });
+    $('p').click(function (e) { 
+        e.preventDefault();
+        e.stopPropagation()
 
-$('span').click(function (e) { 
-    e.preventDefault();
-    e.stopPropagation();
-    
-    $('#resultado').html(`Você clicou no <strong>"P"</strong>`);
+        alert('Evento disparado no p')
+    });
+    $('span').click(function (event) { 
+        event.preventDefault();
+        event.stopPropagation()
+
+        alert('Evento disparado no span')
+    });
 });
 
