@@ -1,10 +1,18 @@
-$(document).on({ 
-    click: (event) => {$('#resultado').html(`${event.type}: ${event.which}`)},
-    keydown: (event) => {
-        $('#resultado').html(`${event.type}: ${event.which}`);
-        if (event.which == 13) {
-            alert('Foi pressionado o ENTER')
-        }
+$(document).on({
+    click: (e) => {
+        $('#resultado').text(`${e.type} : ${e.which}`)
 
-    } 
+        if (e.which == 1) {
+            $("#texto1").text('CFB Cursos');
+        }
+    },
+    keydown: (e) => {
+        $('#resultado').text(`${e.type} : ${e.which}`)
+
+        if (e.which == 13) {
+            $('#texto1').html(`Clicou no tecla <strong>ENTER</strong>`);
+        }else {
+            $("#texto1").text('CFB Cursos');
+        }
+    }
 });
