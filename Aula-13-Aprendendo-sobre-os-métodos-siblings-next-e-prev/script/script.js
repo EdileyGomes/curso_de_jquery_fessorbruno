@@ -1,45 +1,124 @@
 $(document).ready(function () {
     let dis = 0
+    const children = $('span').children()
 
-    $('div').children().css({ 'border': '1px solid black' })
+    $('button').click((e) => {
+        e.preventDefault()
 
-    $('#btn').on({
-        click: (e) => {
+        dis++
+        console.log(dis)
+        let chilLength = children.length
 
-            if (dis == 0) {
-                $('div').children().slideUp(500)
+        while (dis <= chilLength){ 
+            children.css('border','none');
 
-                dis++
-                $('#btn').text('Descer os UL')
-            } else if (dis == 1) {
-                $('div').children().slideDown(500)
-
-                dis = 0
-                $('#btn').text('Esconder os UL')
-            }
+            children.eq(dis - 1).css('border','1px solid red');
+            
+            break;
         }
-    }
-    )
-
-    let dis2 = 0
-    $('#btn2').on({
-        click: () => {
-
-            if (dis2 == 0) {
-                $('ul').find('.li1:first').css({
-                'background-color': 'grey',
-                'padding': '10px'
-                })
-
-                dis2++
-            } else if (dis2 == 1) {
-                $('ul').find('.li1').css({
-                'background-color': 'white',
-                'padding': '0'
-                })
-
-                dis2 = 0
-            }
-        },
+        if (dis >= chilLength) {
+            dis = 0
+        }
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+/////////////////////////////////////////////////////////////////////////////////////
+$('button').click(function (e) { 
+        e.preventDefault();
+
+        dis ++
+
+        if (dis == 1){
+            
+            $('span').children().first().css({
+                'border':'1px solid red'
+            })
+        }else if (dis == 2) {
+            $('span').children().eq(1).css({
+                'border':'1px solid red'
+            })
+
+            $('span').children().first().css({
+                'border':'none'
+            })
+        }else if (dis == 3) {
+            $('span').children().eq(2).css({
+                'border':'1px solid red'
+            })
+
+            $('span').children().eq(1).css({
+                'border':'none'
+            })
+        }else if (dis == 4) {
+            $('span').children().eq(3).css({
+                'border':'1px solid red'
+            })
+
+            $('span').children().eq(2).css({
+                'border':'none'
+            })
+        }else if (dis >= 5) {
+            $('span').children().last().css({
+                'border':'1px solid red'
+            })
+
+            $('span').children().eq(3).css({
+                'border':'none'
+            })
+        }
+    if (dis >= 5) {
+        dis = 0
+    }
+    });
+    
+    ///////////////////////////////////////////////////////////////////////////////////////
+    let dis = 0
+    const children = $('span').children()
+
+    $('button').click((e) => {
+        e.preventDefault()
+
+        dis++
+        let chilLength = children.length
+
+        if (dis - 1 <= chilLength) {
+
+            children.css('border', 'none')
+            children.eq(dis - 1).css('border', '1px solid red')
+        } else {
+            dis = 0
+        }
+    });
+    ////////////////////////////////////////////////////////////////////////////////////////////
+    
+    
+    */
