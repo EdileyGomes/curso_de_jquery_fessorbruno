@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    let dis = 0
     const children = $('span').children()
+    let dis = 0
 
     $('button').click((e) => {
         e.preventDefault()
@@ -11,9 +11,10 @@ $(document).ready(function () {
 
         while (dis <= chilLength){ 
             children.css('border','none');
-
             children.eq(dis - 1).css('border','1px solid red');
             
+            let idAtual = children.eq(dis - 1).attr('tagName');
+            $('#res').text(idAtual ? `ID: ${idAtual}` : 'Sem ID');
             break;
         }
         if (dis >= chilLength) {
