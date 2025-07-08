@@ -1,14 +1,15 @@
 $(document).ready(function () {
-    $('p').first().css({
-        'border':'1px solid red',
-        'background-color':'yellow'
-    })
-    $('p').last().css({
-        'border':'1px solid red',
-        'background-color':'#afa'
-    })
-    $('p').eq(1).css({
-        'border':'1px solid red',
-        'background-color':'#aaf'
-    })
+    $('p').filter('.borda').css({'color':'red'})
+    $('p').not('.borda').css({'color':'white','background-color':'red','padding':'10px'})
 });
+
+$('button').on({
+    click: (e) => {
+        e.preventDefault()
+
+        $(document).css({'display':'none'})
+    },
+    mouseenter: () => {
+        $(document).filter('p').css()
+    }
+})
