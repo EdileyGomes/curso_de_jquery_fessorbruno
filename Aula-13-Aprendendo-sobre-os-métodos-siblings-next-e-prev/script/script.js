@@ -13,7 +13,7 @@ $(document).ready(function () {
             children.css('border','none');
             children.eq(dis - 1).css('border','1px solid red');
             
-            let idAtual = children.eq(dis - 1).attr('tagName');
+            let idAtual = children.eq(dis - 1).attr('id');
             $('#res').text(idAtual ? `ID: ${idAtual}` : 'Sem ID');
             break;
         }
