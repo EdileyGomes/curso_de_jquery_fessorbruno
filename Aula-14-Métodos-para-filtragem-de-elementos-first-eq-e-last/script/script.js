@@ -1,15 +1,10 @@
 $(document).ready(function () {
-    $('p').filter('.borda').css({'color':'red'})
-    $('p').not('.borda').css({'color':'white','background-color':'red','padding':'10px'})
+    $('p').first().css('border','5px solid violet')
+    $('p').last().css('border','5px solid aquamarine')
+
+    $('h3').first().css('border','5px solid violet')
+    $('h3').last().css('border','5px solid aquamarine')
+
+    $('p').eq(2).css('border','10px solid red')
+    $('h3').eq(2).css('border','10px solid red')
 });
-
-$('button').on({
-    click: (e) => {
-        e.preventDefault()
-
-        $(document).css({'display':'none'})
-    },
-    mouseenter: () => {
-        $(document).filter('p').css()
-    }
-})
