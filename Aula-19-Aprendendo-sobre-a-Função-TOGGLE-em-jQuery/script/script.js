@@ -1,9 +1,11 @@
-
-$('#btn-mostrar').click(function() {
-    $('#caixa').show(500)
-})
-$("#btn-ocultar").click(function() {
-    $('#caixa').hide(500)
-
-    $('#sla').remove();
-})
+$('#btn-tggle').click(function (e) { 
+    e.preventDefault();
+    
+    $('#caixa').toggle(500, function() {
+        if ($(this).is(':visible')){
+            $('#btn-tggle').text('Ocultar');
+        } else {
+            $('#btn-tggle').text('Mostrar');
+        }
+    })
+});
