@@ -7,6 +7,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="script/script.js" defer></script>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden
+        }
         * {
             margin: 0;
             padding: 0;
@@ -16,6 +20,7 @@
         #container {
             margin: 10px;
             height: 45px;
+            z-index: 1;
         }
         #barrinha1, #barrinha2, #barrinha3 {
             width: 50px;
@@ -32,6 +37,71 @@
             background-image: linear-gradient(to right, #ff7e5f, #feb47b);
             padding: 10px;
         }
+
+        #menu {
+            width: 200px;
+            background-image: linear-gradient(to bottom, #d14624, #a5622f);
+            padding: 20px;
+            border-radius: 40px 0px 0px 40px;
+            position: absolute;
+            top: 0;
+            right: -200px;
+            height: 100%;
+        }
+
+        #menu h2 {
+            color: white;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 10px;
+            margin: 0px;
+        }
+        #menu ul li {
+            margin: 10px 0;
+            padding: 10px;
+            text-align: center;
+            background-image: linear-gradient(to right, #f36744, #f19046);
+            border-radius: 20px 40px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+        }
+
+        #menu ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #menu ul li a:hover {
+            color: #ffeb3b;
+            text-decoration: underline;
+            background-color: transparent;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer img {
+            width: 30px;
+            height: 30px;
+            display: block;
+            margin: 0px auto 20px auto;
+            cursor: pointer;
+            
+            transition: transform 0.3s;
+        }
+        footer img:hover {
+            transform: scale(1.1);
+            transform: rotate(30deg);
+            
+        }
     </style>
 </head>
 <body>
@@ -43,5 +113,78 @@
             <div id="barrinha3"></div>
         </div>
     </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui voluptatum a perspiciatis placeat error debitis excepturi illo tempore facere ea minima aperiam deleniti eius dignissimos totam, veniam fugiat. Hic?</p>
+    </main>
+    <aside id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <footer>
+            <img src="img/configuracao.png" alt="">
+        </footer>
+    </aside>
 </body>
 </html>
