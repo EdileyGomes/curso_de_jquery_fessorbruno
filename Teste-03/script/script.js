@@ -48,7 +48,7 @@ $(document).ready(function () {
             });
             $('#container').css({
                 'transform': 'translateX(0px)',
-                'transition': 'transform 0.3s'
+                'transition': 'transform 0.7s'
             })
 
 
