@@ -6,37 +6,35 @@ $(document).ready(function () {
         if (cont == 0) {
             $('#barrinha1').css({
                 'transform': 'translateY(10px) rotate(45deg)',
-                'transition': 'transform 0.3s'
+                'transition': 'transform 0.3s',
+                'height': '5px',
+                'width': '30px'
             });
             $('#barrinha2').css({
                 'opacity': '0',
                 'transition': 'opacity 0.3s'
             });
             $('#barrinha3').css({
-                'transform': 'translateY(-15px) rotate(-45deg)',
-                'transition': 'transform 0.3s'
+                'transform': 'translateY(-11px) rotate(-45deg)',
+                'transition': 'transform 0.3s',
+                'height': '5px',
+                'width': '30px'
             });
-
             $('#container').css({
-                'transform': 'translateX(-150px)',
+                'transform': 'translate(-180px, 5px)',
                 'transition': 'transform 0.3s',
             })
 
-            $('header').html(`
-                <h1>Ediley Gomes</h1>
-                    <div id="menu">
-                        <div id="container">
-                            <div id="barrinha1"></div>
-                            <div id="barrinha2"></div>
-                            <div id="barrinha3"></div>
-                        </div>
-                    </div>`
-                )
+            $('#menu').animate({'right':'-5px'})
+            $('#menu').css('position', 'fixed');
+
             cont = 1;
         } else {
             $('#barrinha1').css({
                 'transform': 'none',
-                'transition': 'transform 0.3s'
+                'transition': 'transform 0.3s',
+                'height': '10px',
+                'width': '50px'
             });
             $('#barrinha2').css({
                 'opacity': '1',
@@ -44,13 +42,19 @@ $(document).ready(function () {
             });
             $('#barrinha3').css({
                 'transform': 'none',
-                'transition': 'transform 0.3s'
+                'transition': 'transform 0.3s',
+                'height': '10px',
+                'width': '50px'
             });
             $('#container').css({
                 'transform': 'translateX(0px)',
                 'transition': 'transform 0.3s'
             })
+
+
+            $('#menu').animate({'right':'-200px'})
             cont = 0;
         }
+        console.log(cont)
     });
 });
