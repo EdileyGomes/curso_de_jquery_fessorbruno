@@ -1,9 +1,9 @@
 
 $("#menu").children().on({
     mouseenter: function() {
-        $(this).siblings().fadeTo(500, 0.5);
+        $(this).siblings().stop(true, true).fadeTo(300, 0.5);
     },
     mouseleave: function() {
-        $(this).fadeTo(500, 1);
+        $(this).siblings().stop(true, true).fadeTo(300, 1);
     },
 })
