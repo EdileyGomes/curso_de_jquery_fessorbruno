@@ -1,13 +1,10 @@
-$("#btn-tamanho").click(function() {
+$("#btn-tamanho").click(() => {
     $("#caixa").animate({
-        width:'toggle',
-        height:'toggle'
+        width:"toggle",
+        height:"toggle"
     })
 })
 
-$("#btn-mostrar").click(function () {
-    $('#caixa').animate({
-        opacity:'toggle',
-        fontSize: 'toggle',
-    })
+$("#btn-mostrar").click(() => {
+    $("#caixa").animate({opacity:"toggle", fontSize:"toggle"})
 })
