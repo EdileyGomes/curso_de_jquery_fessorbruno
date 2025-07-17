@@ -1,29 +1,16 @@
-$('.itemMenu').mouseover(function () {
-    $(this).fadeTo(100, 0.2);
+
+
+$('.itemMenu').mouseover(function () { 
+    $(this).siblings().fadeTo(100, 0.5);
+    $(this).css({'transform': 'scale(1.1)', 'transition': 'transform 0.3s'});
 });
 
-$('.itemMenu').mouseout(function () {
-    $(this).fadeTo(100, 1);
+$('.itemMenu').mouseleave(function () { 
+    $(this).siblings().fadeTo(100, 1);
+    $(this).css({'transform': 'scale(1)'});
 });
 
-$("#menujQuery").click(function () {
-    $("#subMenujQuery").fadeToggle(100);
-    $("#subMenujQuery").css({'display': 'flex', 'padding':'10px'}); 
-    $(".itemSubMenu").css({'padding':'20px'})
-});
-$("#menuCanvas").click(function () {
-    $("#subMenuCanvas").fadeToggle(100);
-    $("#subMenuCanvas").css({'display': 'flex', 'padding':'10px'}); 
-    $(".itemSubMenu").css({'padding':'20px'}) 
-});
-$("#menujQuery").click(function () {
-    $("#subMenujQuery").fadeToggle(100);
-    $("#subMenujQuery").css({'display': 'flex', 'padding':'10px'}); 
-    $(".itemSubMenu").css({'padding':'20px'})
-});
-$("#menujQuery").click(function () {
-    $("#subMenujQuery").fadeToggle(100);
-    $("#subMenujQuery").css({'display': 'flex', 'padding':'10px'}); 
-    $(".itemSubMenu").css({'padding':'20px'})
-});
 
+$("#menujQuery").click(function () {
+    $("#subMenujQuery").fadeToggle(1000)
+})
