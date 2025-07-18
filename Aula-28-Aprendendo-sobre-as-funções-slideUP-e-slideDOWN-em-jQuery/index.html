@@ -7,26 +7,63 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="script/script.js" defer></script>
     <style>
-        .caixa {
-            background-color: red;
-            width: 100px;
-            height: 100px;
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .menu {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        #menus {
+            background-color: #888;
+            display: flex;
+            width: 100%;
+        }
+
+        .btn-menu {
+            margin: 5px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        #menus {
+            display: flex;
+            width: 100%;
+        }
+
+        #controle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #888;
+            padding: 5px;
+            border-radius: 0 0 10px 10px;
+            margin-left: 10px;
+            margin-right: auto;
+        }
+
+        #controle button {
+            margin: 5px;
         }
     </style>
 </head>
 <body>
-    <p>
-        <button id="aumentar">Aumentar</button>
-        <button id="diminuir">Diminuir</button>
-    </p>
-    <p>
-        <button id="finalizar">Finalizar</button>
-        <button id="stop">Parar</button>
-    </p>
-    <p id="info">
-
-    </p>
-
-    <div class="caixa"></div>
+    <div id="menu" class="menu">
+        <div id="menus">
+            <button class="btn-menu">Home</button>
+            <button class="btn-menu">Cursos</button>
+            <button class="btn-menu">Sobre</button>
+            <button class="btn-menu">Contato</button>
+            <button class="btn-menu">Ajuda</button>
+        </div>
+        <div id="controle">
+            <button id="btn-cima">Cima</button>
+            <button id="btn-baixo">Baixo</button>
+        </div>
+    </div> 
 </body>
 </html>

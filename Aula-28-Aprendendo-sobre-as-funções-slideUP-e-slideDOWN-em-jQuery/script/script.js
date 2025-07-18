@@ -1,22 +1,15 @@
-$('#aumentar').click(function (e) { 
-    e.preventDefault();
+$(document).ready(function () {
+    $('#btn-cima').click(function (e) { 
+        e.preventDefault();
+        
+        $('#menus').slideUp(1000, () => {
+            alert('Olá, o menu foi fechado!');
+        })
+    });
 
+    $('#btn-baixo').click(function (e) { 
+        e.preventDefault();
 
-    $('.caixa').animate({width:"800px"},{duration: 1500,complete: () => {$('#info').text($('.caixa').queue().length)}})
-    
-});
-
-$('#diminuir').click(function (e) { 
-    e.preventDefault();
-
-    $('.caixa').animate({width:"100px"}, {duration: 1500, complete: () => {$('#info').text($('.caixa').queue().length)}})
-    
-});
-
-$('#finalizar').click(function (e) { 
-    e.preventDefault();
-    
-
-    $('.caixa').finish()
-    $('#info').text('')
+        $('#menus').slideDown(1000)
+    });
 });
