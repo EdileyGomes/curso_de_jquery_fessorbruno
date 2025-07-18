@@ -2,15 +2,15 @@ $('#aumentar').click(function (e) {
     e.preventDefault();
 
 
-    $('.caixa').animate({width:"800px"}, 1500 )
-    $('#info').text($('.caixa').queue().length)
+    $('.caixa').animate({width:"800px"},{duration: 1500,complete: () => {$('#info').text($('.caixa').queue().length)}})
+    
 });
 
 $('#diminuir').click(function (e) { 
     e.preventDefault();
 
-    $('.caixa').animate({width:"100px"}, 1500 )
-    $('#info').text($('.caixa').queue().)
+    $('.caixa').animate({width:"100px"}, {duration: 1500, complete: () => {$('#info').text($('.caixa').queue().length)}})
+    
 });
 
 $('#finalizar').click(function (e) { 
@@ -18,4 +18,5 @@ $('#finalizar').click(function (e) {
     
 
     $('.caixa').finish()
+    $('#info').text('')
 });
