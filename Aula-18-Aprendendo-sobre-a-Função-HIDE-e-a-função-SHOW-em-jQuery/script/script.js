@@ -1,9 +1,11 @@
+$('#btn-mostrar').click(function (e) { 
+    e.preventDefault();
+    
+    $('#caixa').show(1000);
+});
 
-$('#btn-mostrar').click(function() {
-    $('#caixa').show(500)
-})
-$("#btn-ocultar").click(function() {
-    $('#caixa').hide(500)
-
-    $('#sla').remove();
-})
+$('#btn-ocultar').click(function (e) { 
+    e.preventDefault();
+    
+    $('#caixa').hide(2000);
+});
