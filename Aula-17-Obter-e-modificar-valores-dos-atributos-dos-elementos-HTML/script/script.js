@@ -1,19 +1,42 @@
 cont = 0
-$('#caixa').click(function (e) {
-    
+$(document).click(function (e) { 
+    e.preventDefault();
+
     if (cont == 0) {
-        $(this).attr('class', 'azul')
+        $('iframe').attr('src',"https://www.youtube.com/embed/owgYF9WeKU4?si=jlotmTopqpGOx8cj")
 
         cont ++
     } else {
-        $(this).attr('class', 'vermelho')
+        $('iframe').attr('src',"https://www.youtube.com/embed/Homo-ORr-9o?si=azoCxCitm5MGDc6o")
+        
         cont = 0
     }
-})
+});
 
-$('#btn-azul').click(function() {
-    $('iframe').attr('src','https://www.youtube.com/embed/WiKsK0kmzlU?si=2QbzF2NfvrswHexU')
-})
-$("#btn-vermelho").click(function() {
-    $('iframe').attr('src','https://www.youtube.com/embed/Homo-ORr-9o?si=azoCxCitm5MGDc6o')
-})
+$('#btn-vermelho').click(function (e) { 
+    e.preventDefault();
+    
+    $('#caixa').attr('style','background-color:red')
+});
+
+$('#btn-azul').click(function (e) { 
+    e.preventDefault();
+    
+    $('#caixa').attr('style','background-color:blue')
+});
+
+let cont2 = 0
+
+$('#toggle').click(function (e) { 
+    e.preventDefault();
+    
+    if (cont2 == 0 && cont == 1) {
+        $('#caixa').attr('style','background-color:blue')
+
+        cont2 ++
+    } else {
+        $('#caixa').attr('style','background-color:red') 
+
+        cont2 = 0
+    }
+});
