@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="script/script.js" defer></script>
     <style>
-        .caixa {
+        .caixa, #caixa2 {
             border: 1px solid black;
             width: 200px; 
             height: 200px;
@@ -15,6 +15,16 @@
             position: absolute;
             left: 0px;
             top: 50px
+        }
+        #caixa2 {
+            border: 1px solid black;
+            width: 200px; 
+            height: 200px;
+            background-color: #aaa;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
@@ -27,5 +37,10 @@
     <button id="diminuir">Diminuir</button>
     <button id="esquerda">Esquerda</button>
     <button id="direita">Direira</button>
+    <button id="sla">Clique Aqui</button>
+
+    <div id="caixa2"></div>
+
+    <input type="number" id="numero">
 </body>
 </html>
