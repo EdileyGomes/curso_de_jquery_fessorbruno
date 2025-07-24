@@ -1,5 +1,6 @@
 $(document).ready(function evento() {
-    let num = $('#numero').val()
+    let numH = $('#numeroH').val()
+    let numW = $('#numeroH').val()
 
     $('#aumentar').click(function (e) { 
         e.preventDefault();
@@ -7,6 +8,8 @@ $(document).ready(function evento() {
         $('#caixa').animate({width:'500px', height: '500px'})
     });
 
-
-    $('#caixa2').toggle(1000).delay(1000).animate({width:'300px'}).animate({width:`${num}px`}).toggle(1000, evento)
+    function animacao() {
+        $('#caixa2').animate({height:`${numH}px`}).delay(1000).animate({width:`${numW}px`},{duration:500, animacao})
+    }
+    animacao()
 });
