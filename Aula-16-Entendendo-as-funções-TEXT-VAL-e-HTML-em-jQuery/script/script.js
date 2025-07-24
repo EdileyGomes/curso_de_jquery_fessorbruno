@@ -9,9 +9,19 @@ $('#nome').keyup(function() {
     $('#sla').text(`Você digitou: ${$(this).val()}`)
 })
 
+let cont = 0
+
 $('button').click( function() {
+    if (cont == 0) {
+        $('p').html('<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur, assumenda dolores natus nisi deserunt labore, nihil repellat aliquid enim, quos voluptatum cum? Velit expedita odio possimus provident distinctio at?</p>'+
+        '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, tenetur animi minus nam, magni non ipsa ipsum molestias laborum harum facere odio ut quisquam nemo! Culpa illum vitae porro pariatur.</p>');
 
+        cont ++
+    } else {
+        $('p').html('')
 
-    $('p').html('<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur, assumenda dolores natus nisi deserunt labore, nihil repellat aliquid enim, quos voluptatum cum? Velit expedita odio possimus provident distinctio at?</p>'+
-    '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, tenetur animi minus nam, magni non ipsa ipsum molestias laborum harum facere odio ut quisquam nemo! Culpa illum vitae porro pariatur.</p>');
+        cont = 0
+    }
+
+    // 
 })
