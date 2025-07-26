@@ -1,9 +1,8 @@
+$(".itemMenu").mouseover(function () {
+    $(this).stop(true).fadeTo(300, 1);
+    $(this).siblings().stop(true).fadeTo(300, 0.4);
+});
 
-$("#menu").children().on({
-    mouseenter: function() {
-        $(this).siblings().stop(true, true).fadeTo(300, 0.5);
-    },
-    mouseleave: function() {
-        $(this).siblings().stop(true, true).fadeTo(300, 1);
-    },
-})
+$(".itemMenu").mouseleave(function () {
+    $(".itemMenu").stop(true).fadeTo(300, 1);
+});
