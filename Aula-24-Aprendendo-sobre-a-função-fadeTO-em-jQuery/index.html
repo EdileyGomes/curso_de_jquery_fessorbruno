@@ -26,16 +26,7 @@
             transition: all 0.3s ease;
         }
 
-        .menu > div:hover {
-            transform: scale(1.1);
-            z-index: 1;
-        }
-
-        .itemMenu1,
-        .itemMenu2,
-        .itemMenu3,
-        .itemMenu4,
-        .itemMenu5 {
+        #itemMenu {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -53,11 +44,11 @@
 </head>
 <body>
     <div id="menu" class="menu">
-        <div class="itemMenu1">Home</div>
-        <div class="itemMenu2">jQuery</div>
-        <div class="itemMenu3">Canvas</div>
-        <div class="itemMenu4">Python</div>
-        <div class="itemMenu5">Java</div>
+        <div class="itemMenu" id="itemMenu">Home</div>
+        <div class="itemMenu" id="itemMenu">jQuery</div>
+        <div class="itemMenu" id="itemMenu">Canvas</div>
+        <div class="itemMenu" id="itemMenu">Python</div>
+        <div class="itemMenu" id="itemMenu">Java</div>
     </div>
 </body>
 </html>
