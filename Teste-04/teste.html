@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Esconder Header com Scroll</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition: top 0.3s ease;
+    z-index: 1000;
+}
+
+.conteudo {
+    margin-top: 100px;
+    height: 2000px;
+    padding: 20px;
+    background: #f0f0f0;
+}
+</style>
+</head>
+<body>
+
+<header id="header">Meu Header</header>
+<div class="conteudo">
+Role a página para ver o efeito.
+</div>
+
+<script>
+$(document).ready(function () {
+    var lastScrollTop = 0;
+    $(window).on('scroll', function () {
+    var currentScroll = $(this).scrollTop();
+    if (currentScroll > lastScrollTop) {
+        // Scroll para baixo
+        $('#header').css('top', '-100px'); // Esconde
+    } else {
+        // Scroll para cima
+        $('#header').css('top', '0'); // Mostra
+    }
+    lastScrollTop = currentScroll;
+    });
+});
+</script>
+
+</body>
+</html>
