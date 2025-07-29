@@ -26,7 +26,7 @@ $('#stop').click(function (e){
     $('.caixa').stop()
     if (cont === 0) {
         cont = 1
-        $(".caixa").append('<br><br><br><br><br><br><p>a animação parou</p>')
+        $(".caixa").html('<br><br><br><br><br><br><p>a animação parou</p>')
     } else {
         cont = 0
         $(".caixa p").remove()
