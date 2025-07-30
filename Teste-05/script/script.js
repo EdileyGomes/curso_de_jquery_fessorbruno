@@ -4,29 +4,26 @@ $(document).ready(function () {
     $('#calculadora button').click(function(e) {
         e.preventDefault();
 
-        let valor = $(this).text(); // pega o texto do botão
+        let valor = $(this).text();
 
-        // Quando clicar em "="
         if (valor === '=') {
             try {
-                let resultado = eval(expressao.replace(/x/g, '*')); // troca "x" por "*"
-                $('#valor').val(resultado); // mostra o resultado
-                expressao = resultado.toString(); // continua a partir do resultado
-            } catch {
+                let resultado = math.evaluate(expressao.replace(/x/g, '*'));
+                $('#valor').val(resultado);
+                expressao = resultado.toString(); // atualiza a expressão com o resultado
+            } catch (err) {
                 $('#valor').val('Erro');
                 expressao = '';
             }
-            return;
+            return; // IMPORTANTE: evita adicionar "=" na expressão
         }
 
-        // Quando clicar em "C" (limpar) — você pode criar esse botão depois
         if (valor === 'C') {
             expressao = '';
             $('#valor').val('');
             return;
         }
 
-        // Caso contrário, é número ou operador
         expressao += valor;
         $('#valor').val(expressao);
     });
