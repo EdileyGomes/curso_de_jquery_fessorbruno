@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulão</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script/script.js" defer></script>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .menu {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        #menus {
+            background-color: #888;
+            display: flex;
+            width: 100%;
+        }
+
+        .btn-menu {
+            margin: 5px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        #menus {
+            display: flex;
+            width: 100%;
+        }
+
+        #controle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #888;
+            padding: 5px;
+            position: relative;
+            border-radius: 0 0 10px 10px;
+            margin-left: 20px;
+            margin-right: auto;
+        }
+
+        #controle button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu" class="menu">
+        <div id="menus">
+            <button class="btn-menu">Home</button>
+            <button class="btn-menu">Cursos</button>
+            <button class="btn-menu">Sobre</button>
+            <button class="btn-menu">Contato</button>
+            <button class="btn-menu">Ajuda</button>
+        </div>
+        <div id="controle">
+            <button id="toggle" >Menu</button>
+            <p>Ocultar</p>
+        </div>
+    </div> 
+</body>
+</html>
