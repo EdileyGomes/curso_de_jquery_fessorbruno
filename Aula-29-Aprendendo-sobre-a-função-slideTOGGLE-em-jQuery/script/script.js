@@ -1,25 +1,19 @@
 const cx = $()
-
-function sla() {
-    alert('Olá, Mundo')
-}
-
-$('#btn-cima').click(function (e) { 
-    e.preventDefault();
-    
-    $(".btn-menu").fadeOut(500)
-    $('#menus').delay(400).slideUp(1000)
-});
-
-$('#btn-baixo').click(function (e) { 
-    e.preventDefault();
-    
-    $('#menus').slideDown(500).delay(3000);
-    $(".btn-menu").delay(700).fadeIn(1000)
-});
-
+let cont = 0 
 $('#toggle').click(function (e) { 
     e.preventDefault();
     
-    $('#menus').slideToggle();
+
+    if (cont == 0){
+        $('.btn-menu').fadeOut(300);
+        $('#menus').delay(400).slideToggle(300);
+
+        cont ++
+    } else {
+        $('.btn-menu').fadeIn(300);
+        $('#menus').delay(100).slideToggle();
+
+        cont = 0 
+    }
+    
 });
