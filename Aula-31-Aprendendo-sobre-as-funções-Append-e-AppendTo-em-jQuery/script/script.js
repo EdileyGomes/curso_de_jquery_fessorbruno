@@ -6,9 +6,9 @@ $('#btn-adicionar').click(function (e) {
     r = Math.floor(Math.random()*255)
     g = Math.floor(Math.random()*255)
     b = Math.floor(Math.random()*255)
-    a = Math.floor(Math.random()*1)
+    a = Number(Math.random().toFixed(3));
 
-    $('#caixa').append(`<div class='subcaixa' style='background-color:rgb(${r},${g},${b})'> </div>`);
+    $('#caixa').append(`<div class='subcaixa' style='background-color:rgba(${r},${g},${b},${a})'> </div>`);
 });
 
 $('#btn-adicionar5').click(function (e) { 
@@ -18,9 +18,9 @@ $('#btn-adicionar5').click(function (e) {
         r = Math.floor(Math.random()*255)
         g = Math.floor(Math.random()*255)
         b = Math.floor(Math.random()*255)
-        a = Math.floor(Math.random()*1)
+        a = Number(Math.random().toFixed(3));
 
-        $('#caixa').append(`<div class='subcaixa' style='background-color:rgb(${r},${g},${b})'> </div>`);
+        $('#caixa').append(`<div class='subcaixa' style='background-color:rgba(${r},${g},${b},${a})'> </div>`);
     }
     
 });
