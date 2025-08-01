@@ -8,22 +8,32 @@
     <script src="script/script.js" defer></script>
     <style>
         .caixa {
-            background-color: red;
+            background-color: #bbb;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            padding: 10px 0px 0px 0px;
+            width: 100%;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+        }
+
+        .subcaixa {
+            border: 1px solid black;
             width: 100px;
             height: 100px;
-            position: absolute;
-            left: 0px;
-            top: 50px;
+            margin: 0px 0px 10px 10px;
+
         }
     </style>
 </head>
 <body>
     <p>
-        <button id="btn-animar">Animar</button>
-        <button id="btn-proxima">Próxima</button>
-        <button id="btn-parar">Parar</button>
-        <button id="btn-fim">Fim</button>
+        <button id="btn-adicionar">Adicionar</button>
+        <button id="btn-adicionar5">Adicionar 5x</button>
     </p>
-    <div id="caixa" class="caixa"></div>
+
+    <div id="caixa" class="caixa"></div> 
+
 </body>
 </html>
