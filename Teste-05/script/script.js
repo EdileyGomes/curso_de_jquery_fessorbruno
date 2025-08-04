@@ -9,7 +9,7 @@ $(document).ready(function () {
         if (valor === '=') {
             try {
                 let resultado = math.evaluate(expressao.replace(/x/g, '*'));
-                $('#valo1r').val(resultado);
+                $('#valor').val(resultado);
                 expressao = resultado.toString(); // atualiza a expressão com o resultado
             } catch (err) {
                 $('#valor').val('Erro');
