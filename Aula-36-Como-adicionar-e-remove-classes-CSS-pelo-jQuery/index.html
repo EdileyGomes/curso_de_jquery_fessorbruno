@@ -8,25 +8,26 @@
     <script src="script/script.js" defer></script>
     <style>
         .caixa {
-            background-color: #bbb;
             border: 1px solid black;
             border-radius: 10px;
-            display: flex;
             padding: 10px 0px 0px 0px;
+            display: flex;
             width: 100%;
+            height: 100px;
             box-sizing: border-box;
             flex-wrap: wrap;
         }
 
-        .subcaixa {
-            border: 1px solid black;
-            width: 100px;
-            height: 100px;
-            margin: 0px 0px 10px 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: xx-large;
+        .verde {
+            background-color: #0f0;
+        }
+
+        .azul{
+            background-color: #00f;
+        }
+
+        .vermelho {
+            background-color: #f00;
         }
     </style>
 </head>
@@ -36,11 +37,6 @@
         <button id="btn-verde">verde</button>
         <button id="btn-azul">azul</button>
     </p>
-
-    <div id="caixa" class="caixa">
-        <div id="d0" class="subcaixa" style="background-color: #fff;">0</div> 
-    </div>
-    <div id="caixa2" class="caixa">CFB Cursos</div>
-
+    <div id="caixa" class="caixa"></div>
 </body>
 </html>
