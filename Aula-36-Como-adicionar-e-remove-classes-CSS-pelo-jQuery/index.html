@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulão</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script/script.js" defer></script>
+    <style>
+        .caixa {
+            background-color: #bbb;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            padding: 10px 0px 0px 0px;
+            width: 100%;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+        }
+
+        .subcaixa {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 0px 0px 10px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <button id="btn-vermelho">vermelho</button>
+        <button id="btn-verde">verde</button>
+        <button id="btn-azul">azul</button>
+    </p>
+
+    <div id="caixa" class="caixa">
+        <div id="d0" class="subcaixa" style="background-color: #fff;">0</div> 
+    </div>
+    <div id="caixa2" class="caixa">CFB Cursos</div>
+
+</body>
+</html>
