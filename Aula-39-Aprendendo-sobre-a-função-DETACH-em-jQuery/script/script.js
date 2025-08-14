@@ -6,5 +6,5 @@ console.log(itens)
 $('#btn-mudar').click(function (e) { 
     e.preventDefault();
     
-    let item1 = 1
+    let item = 1
 });
