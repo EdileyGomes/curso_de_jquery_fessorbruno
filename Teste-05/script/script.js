@@ -11,7 +11,7 @@ $(document).ready(function () {
                 let resultado = math.evaluate(expressao.replace(/x/g, '*'));
                 $('#valor').val(resultado);
                 expressao = resultado.toString(); // atualiza a expressão com o resultado
-            } catch (err) {11
+            } catch (err) {
                 $('#valor').val('Erro');
                 expressao = '';
             }
