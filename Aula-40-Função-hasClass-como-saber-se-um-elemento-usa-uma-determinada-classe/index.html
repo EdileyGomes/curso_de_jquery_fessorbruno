@@ -7,67 +7,62 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="script/script.js" defer></script>
     <style>
-        .caixa {
-            background-color: #ddd;
-            border: 3px solid black;
-            border-radius: 10px;
-            padding: 10px;
+        .caixas {
             display: flex;
             width: 100%;
+        }
+
+        .caixa {
+            background-color: #ddd;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
             height: 100px;
             box-sizing: border-box;
             flex-wrap: wrap;
             margin-bottom: 10px;
+            margin: 10px;
         }
 
-        .item {
-            border-radius: 10px;
-            display: flex;
-            width: 80px;
-            height: 80px;
-            margin-right: 10px;
-            color: white;
-            font-size: large;
-            justify-content: center;
-            align-items: center;
+        .ocultar {
+            display: none;
         }
 
-        .cor1 {
+        .btn-fechar {
             background-color: red;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
         }
-
-        .cor2 {
-            background-color: green;
-        }   
-
-        .cor3 {
-            background-color: blue;
-        }
-
-        .cor4 {
-            background-color: rgb(135, 153, 55);
-        }
-
-        .cor5 {
-            background-color: orange;
-        }
-
     </style>
 </head>
 <body>
     <p>
         <button id="btn-reset">Resetar</button>
-        <button id="btn-mudar">Mudar</button>
     </p>
-    <div class="caixa" id="caixa1">
-        <div id="item0" class="item cor1">1</div>
-        <div id="item1" class="item cor2">2</div>
-        <div id="item2" class="item cor3">3</div>
-        <div id="item3" class="item cor4">4</div>
-        <div id="item4" class="item cor5">5</div>
-    </div>
-    <div class="caixa" id="caixa2">
-
+    <div class="caixas">
+        <div id="caixa1"  class="caixa" style="background-color: red;">
+            <button id="btn-fechar1" class="btn-fechar">X</button>
+        </div>
+        <div id="caixa2" class="caixa" style="background-color: blue;">
+            <button id="btn-fechar2" class="btn-fechar">X</button>
+        </div>
+        <div id="caixa3" class="caixa" style="background-color: green;">
+            <button id="btn-fechar3" class="btn-fechar">X</button>
+        </div>
+        <div id="caixa4" class="caixa" style="background-color: yellow;">
+            <button id="btn-fechar4" class="btn-fechar">X</button>
+        </div>
+        <div id="caixa5" class="caixa" style="background-color: violet;">
+            <button id="btn-fechar5" class="btn-fechar">X</button>
+        </div>
     </div>
 </body>
 </html>
