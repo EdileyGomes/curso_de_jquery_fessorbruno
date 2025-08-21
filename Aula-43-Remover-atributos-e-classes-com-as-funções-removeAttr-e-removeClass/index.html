@@ -9,7 +9,6 @@
     <style>
         .caixa {
             background-color: #ddd;
-            border: 1px solid black;
             border-radius: 10px;
             display: flex;
             justify-content: center;
@@ -19,13 +18,20 @@
             box-sizing: border-box;
             flex-wrap: wrap;
             margin-right: 10px;
-            transition: alle 0.3s ease-in-out;
+        }
+
+        .borda {
+            border: 3px solid black;
+            border-radius: 20px;
         }
     </style>
 </head>
 <body>
     <p>
         <button id="btn-posição">Posição</button>
+        <button id="btn-removerAtributo">Remover Atributo</button>
+        <button id="btn-removerClasse">Remover Classe</button>
+        <button id="btn-adicionarClasse">Adicionar Classe</button>
         <br>
         <label>Topo:</label>
         <input type="range" name="top" id="top" min="0" max="500">
